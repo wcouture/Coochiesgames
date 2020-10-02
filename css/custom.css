@@ -1,6 +1,40 @@
 .header{
   margin: 15vh;
-  border-color: black;
-  border-width: 1px;
   text-align: center;
+}
+.headerMain{
+  margin: 15vh;
+  text-align: center;
+  background-color: darkblue;
+}
+.gridLayout{
+  display: grid;
+  width: 100%;
+  grid-template-columns: 5vw 26vw 5vw 26vw 5vw 26vw 5vw;
+  grid-template-rows: 15vh 15vh 15vh;
+  grid-template-areas: 'header header header header header header header'
+                       'space game1 space game2 space game3 space'
+                       'space game4 space game5 space game6 space';
+
+}
+#header{
+  grid-area: header;
+}
+#game1{
+    grid-area:game1;
+}
+#game2{
+    grid-area:game2;
+}
+#game3{
+    grid-area:game3;
+}
+#game4{
+    grid-area:game4;
+}
+#game5{
+    grid-area:game5;
+}
+#game6{
+    grid-area:game6;
 }
