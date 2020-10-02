@@ -38,3 +38,23 @@
 #game6{
     grid-area:game6;
 }
+.iframe{
+  text-align center;
+}
+.navGame{
+  border: .03em solid black;
+  border-radius: .1em;
+  padding: .1em 0;
+  margin: .2em 0 0;
+  text-align: center;
+}
+#aGame{
+  padding: .1em .05em;
+  font-size: 1.5em;
+}
+nav a:hover{
+  color: green;
+}
+nav p{
+  background: none;
+}
