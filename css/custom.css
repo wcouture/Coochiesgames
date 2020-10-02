@@ -5,16 +5,17 @@
 .headerMain{
   margin: 15vh;
   text-align: center;
-  background-color: darkblue;
+  text-decoration: underline;
 }
 .gridLayout{
   display: grid;
   width: 100%;
-  grid-template-columns: 5vw 26vw 5vw 26vw 5vw 26vw 5vw;
-  grid-template-rows: 15vh 15vh 15vh;
-  grid-template-areas: 'header header header header header header header'
-                       'space game1 space game2 space game3 space'
-                       'space game4 space game5 space game6 space';
+  height: auto;
+  grid-template-columns: 15vw 26vw 26vw 26vw 15vw;
+  grid-template-rows: 25vh 15vh 15vh;
+  grid-template-areas: "header header header header header"
+                       "space game1 game2 game3 space"
+                       "space game4 game5 game6 space";
 
 }
 #header{
@@ -57,4 +58,19 @@ nav a:hover{
 }
 nav p{
   background: none;
+}
+.gameLayout{
+  display: grid;
+  width: 100%;
+  height: auto;
+  grid-template-areas: "header"
+                       "nav"
+                       "game";
+  grid-template-rows: 25vh 15vh 1000em;
+}
+#nav{
+  grid-area: nav;
+}
+#game{
+  grid-area: game;
 }
