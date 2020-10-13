@@ -1,11 +1,12 @@
-.header{
-  margin: 15vh;
-  text-align: center;
+:root{
+  --red: rgba(217, 156, 152, 0.5);
+  --blue: rgba(52, 122, 235);
 }
 .headerMain{
   margin: 15vh;
   text-align: center;
   text-decoration: underline;
+  background-color: var(--blue);
 }
 .gridLayout{
   display: grid;
@@ -48,6 +49,7 @@
   padding: .1em 0;
   margin: .2em 0 0;
   text-align: justify;
+  background-color: var(--red);
 }
 #aGame{
   padding: .1em .05em;
